@@ -1,6 +1,6 @@
 <h1>Employees</h1>
 
 <% @employees.each do |employee| %>
-  <h2><a href="/employees/<%= employee["id"] %>"><%= employee["full_name"] %></h2>
+  <h2><a href="/employees/<%= employee.id %>"><%= employee.full_name %></h2>
   <br>
 <% end %>
